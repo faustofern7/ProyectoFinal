@@ -12,11 +12,11 @@ const FormularioPlanes = () => {
     setValue,
   } = useForm();
 
-  const navegacion = useNavigate()
+  const navegacion = useNavigate();
 
   const claseValidada = (clase) => {
     console.log(clase);
-    navegacion('*')
+    navegacion("*");
   };
 
   return (

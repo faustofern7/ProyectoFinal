@@ -34,15 +34,22 @@ function App() {
         ></Route>
         <Route path="/contacto" element={<Contacto></Contacto>}></Route>
         <Route
-          
           path="/administrador/*"
-          element={<RutasProtegidas>
-            <ListasRutasAdmin></ListasRutasAdmin>
-          </RutasProtegidas>}
+          element={
+            <RutasProtegidas>
+              <ListasRutasAdmin></ListasRutasAdmin>
+            </RutasProtegidas>
+          }
         ></Route>
-        <Route path="/nosotros" element={<AcercaDeNosotros></AcercaDeNosotros>}></Route>
+        <Route
+          path="/nosotros"
+          element={<AcercaDeNosotros></AcercaDeNosotros>}
+        ></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
-        <Route path="/suscribirse" element={<FormularioPlanes></FormularioPlanes>}></Route>                                 
+        <Route
+          path="/suscribirse"
+          element={<FormularioPlanes></FormularioPlanes>}
+        ></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
@@ -50,4 +57,3 @@ function App() {
 }
 
 export default App;
-

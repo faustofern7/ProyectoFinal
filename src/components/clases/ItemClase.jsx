@@ -4,7 +4,6 @@ import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 
 const ItemClase = ({ clase, setClases }) => {
-
   const borrarClase = () => {
     Swal.fire({
       title: "¿Estas seguro de borrar la clase?",
@@ -58,11 +57,14 @@ const ItemClase = ({ clase, setClases }) => {
         ></img>
       </td>
       <td className="text-center">
-        <Link to={'/administrador/editar/' + clase._id} className="btn m-1 btnOpciones">
+        <Link
+          to={"/administrador/editar/" + clase._id}
+          className="btn m-1 btnOpciones"
+        >
           <i className="bi bi-pencil-square"></i>
         </Link>
         <button className="btn btnOpciones">
-          <i className="bi bi-trash" onClick={borrarClase} ></i>
+          <i className="bi bi-trash" onClick={borrarClase}></i>
         </button>
       </td>
     </tr>

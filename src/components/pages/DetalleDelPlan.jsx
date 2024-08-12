@@ -15,9 +15,11 @@ const DetalleDelPlan = () => {
             />
           </Col>
 
-          <Col md={6} >
-            <Card.Body >
-              <Card.Title className="primary-font text-center">Musculación</Card.Title>
+          <Col md={6}>
+            <Card.Body>
+              <Card.Title className="primary-font text-center">
+                Musculación
+              </Card.Title>
               <div>
                 <h2>Descripción del servicio:</h2>
                 <p>
@@ -45,10 +47,12 @@ const DetalleDelPlan = () => {
                   </li>
                 </ul>
               </div>
-              
+
               <br />
               <br />
-              <span className="primary-font fw-semibold">Precio: $28.0000,00</span>
+              <span className="primary-font fw-semibold">
+                Precio: $28.0000,00
+              </span>
               <br />
               <br />
               <Button variant="primary">Suscribite</Button>

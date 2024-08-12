@@ -93,8 +93,8 @@ const FormularioClase = ({ creando }) => {
                 },
                 pattern: {
                   value: /^[a-zA-Z\s]+$/,
-                  message: "Debe ingresar un nombre valido Ej: Pilates"
-                }
+                  message: "Debe ingresar un nombre valido Ej: Pilates",
+                },
               })}
             />
             <Form.Text className="text-danger">
@@ -120,8 +120,8 @@ const FormularioClase = ({ creando }) => {
                 },
                 pattern: {
                   value: /^[a-zA-Z\s]+$/,
-                  message: "Debe ingresar un nombre valido Ej: Prado Nicolas"
-                }
+                  message: "Debe ingresar un nombre valido Ej: Prado Nicolas",
+                },
               })}
             />
             <Form.Text className="text-danger">

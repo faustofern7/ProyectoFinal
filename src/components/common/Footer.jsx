@@ -10,7 +10,11 @@ const Footer = () => {
         <Row>
           <Col md={12} lg={3} className="text-center">
             <Link to={"/"}>
-              <img src={logo} alt="Logo Gym center" className="w-50 mt-4 mb-4" />
+              <img
+                src={logo}
+                alt="Logo Gym center"
+                className="w-50 mt-4 mb-4"
+              />
             </Link>
           </Col>
           <Col className="d-none d-md-block text-white">
@@ -62,17 +66,26 @@ const Footer = () => {
                 <i className="bi bi-whatsapp"></i> 381-543457
               </p>
             </Link>
-            <Link to={'*'} className="text-white link-dark text-decoration-none">
+            <Link
+              to={"*"}
+              className="text-white link-dark text-decoration-none"
+            >
               <p>
                 <i className="bi bi-instagram"></i> Gym centre
               </p>
             </Link>
-            <Link to={'*'} className="text-white link-dark text-decoration-none">
+            <Link
+              to={"*"}
+              className="text-white link-dark text-decoration-none"
+            >
               <p>
                 <i className="bi bi-facebook"></i> Gym centre
               </p>
             </Link>
-            <Link to={'*'} className="text-white link-dark text-decoration-none">
+            <Link
+              to={"*"}
+              className="text-white link-dark text-decoration-none"
+            >
               <p>
                 <i className="bi bi-geo-alt-fill"></i> Moreno 370
               </p>

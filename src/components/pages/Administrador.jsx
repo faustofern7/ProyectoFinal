@@ -8,22 +8,22 @@ import { listarClases } from "../helpers/queries";
 const Administrador = () => {
   const [clases, setClases] = useState([]);
 
-  useEffect (() => {
-    obtenerClases()
-  }, [])
+  useEffect(() => {
+    obtenerClases();
+  }, []);
 
-  const obtenerClases = async() => {
+  const obtenerClases = async () => {
     const respuesta = await listarClases();
-    if(respuesta.status === 200){
+    if (respuesta.status === 200) {
       const datos = await respuesta.json();
       setClases(datos);
-    }else{
+    } else {
       //Notificarle al usuario atraves de un mensaje
     }
-  }
+  };
 
   return (
-    <div className='bg-black'>
+    <div className="bg-black">
       <section className="container mainSection ">
         <div className="d-flex justify-content-between align-items-center mt-5 py-3">
           <h1 className="display-5 text-white">Gestionar Clases</h1>
@@ -32,7 +32,7 @@ const Administrador = () => {
           </Link>
         </div>
         <hr />
-        <Table responsive  bordered hover>
+        <Table responsive bordered hover>
           <thead>
             <tr className="text-center">
               <th>Clase</th>
@@ -44,9 +44,13 @@ const Administrador = () => {
             </tr>
           </thead>
           <tbody>
-            {
-              clases.map((itemClase) => <ItemClase key={itemClase._id} clase={itemClase} setClases={setClases}></ItemClase> )
-            }
+            {clases.map((itemClase) => (
+              <ItemClase
+                key={itemClase._id}
+                clase={itemClase}
+                setClases={setClases}
+              ></ItemClase>
+            ))}
           </tbody>
         </Table>
       </section>

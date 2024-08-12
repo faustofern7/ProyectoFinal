@@ -5,15 +5,12 @@ import Administrador from "../pages/Administrador";
 const ListasRutasAdmin = () => {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={<Administrador></Administrador>}
-      ></Route>
+      <Route path="/" element={<Administrador></Administrador>}></Route>
       <Route
         path="/crear"
         element={<FormularioClase creando={true}></FormularioClase>}
       ></Route>
-      <Route       
+      <Route
         path="/editar/:id"
         element={<FormularioClase creando={false}></FormularioClase>}
       ></Route>

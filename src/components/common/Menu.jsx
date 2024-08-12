@@ -6,22 +6,22 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
-
   const navegacion = useNavigate();
 
   const logout = () => {
-    sessionStorage.removeItem('usuariofitfactory');
+    sessionStorage.removeItem("usuariofitfactory");
     setUsuarioLogueado({});
     navegacion("/");
   };
 
-  const [clima, setClima] = useState('');
+  const [clima, setClima] = useState("");
 
-  useEffect(() => {consultarAPI();}, []);
+  useEffect(() => {
+    consultarAPI();
+  }, []);
 
   const consultarAPI = async () => {
     try {
-      
       const respuesta = await fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=Tucuman,ar&APPID=96e54c77ff9c0e3692eef44bac90ca30"
       );
@@ -32,7 +32,6 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
       }
     } catch (error) {
       console.error(error);
-
     }
   };
 
@@ -40,7 +39,6 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
 
   const { name, main } = clima;
   const temp = main ? kelvinACentigrados(main.temp) : null;
-
 
   return (
     <Navbar expand="lg" className="bgVerde fs-5  ">
@@ -56,21 +54,12 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             <NavLink to="/" className="nav-link fontWeight">
               Inicio
             </NavLink>
-            {
-            usuarioLogueado.email ? (
+            {usuarioLogueado.email ? (
               <>
-                <NavLink
-                
-                  to="/administrador"
-                  className="nav-link fontWeight "
-                >
+                <NavLink to="/administrador" className="nav-link fontWeight ">
                   Administrador
                 </NavLink>
-                <NavLink
-                  
-                  to="/contacto"
-                  className="nav-link fontWeight"
-                >
+                <NavLink to="/contacto" className="nav-link fontWeight">
                   Contacto
                 </NavLink>
                 <NavLink to="*" className="nav-link fontWeight">
@@ -80,22 +69,18 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
                   Nosotros
                 </NavLink>
                 <div className="d-flex justify-content-start">
-                <Button
-                  variant="link"
-                  className="nav-link fontWeight"
-                  onClick={logout}
-                >
-                  logout
-                </Button>
+                  <Button
+                    variant="link"
+                    className="nav-link fontWeight"
+                    onClick={logout}
+                  >
+                    logout
+                  </Button>
                 </div>
               </>
             ) : (
               <>
-                <NavLink
-                  
-                  to="/contacto"
-                  className="nav-link fontWeight"
-                >
+                <NavLink to="/contacto" className="nav-link fontWeight">
                   Contacto
                 </NavLink>
                 <NavLink to="*" className="nav-link fontWeight">

@@ -18,7 +18,7 @@ const Login = ({ setUsuarioLogueado }) => {
     const respuesta = await login(usuario);
     try {
       if (respuesta.status === 200) {
-         //aqui el usuario ya esta logueado
+        //aqui el usuario ya esta logueado
         Swal.fire(
           "¡Bienvenido!",
           "Has iniciado sesión correctamente",
@@ -30,7 +30,7 @@ const Login = ({ setUsuarioLogueado }) => {
           "usuariofitfactory",
           JSON.stringify({ email: datos.email, token: datos.token })
         );
-         //actualizar el state
+        //actualizar el state
         setUsuarioLogueado(datos);
         navegacion("/administrador");
       } else {

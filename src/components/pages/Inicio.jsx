@@ -8,7 +8,6 @@ import { listarClases } from "../helpers/queries";
 import planes from "../planes/planes.js";
 import { Link } from "react-router-dom";
 
-
 const Inicio = () => {
   const [clases, setClases] = useState([]);
 
@@ -29,10 +28,11 @@ const Inicio = () => {
   return (
     <div className="mainSection">
       <div className="banner text-center p-1">
-        <h3 className="">
-          Un paso a la vez, hacia tu mejor versión
-        </h3>
-        <Link to={'/suscribirse'} className=" btn p-1 rounded-2 bgVerde mt-2 text-white">
+        <h3 className="">Un paso a la vez, hacia tu mejor versión</h3>
+        <Link
+          to={"/suscribirse"}
+          className=" btn p-1 rounded-2 bgVerde mt-2 text-white"
+        >
           Comenzá ya
         </Link>
       </div>
@@ -41,21 +41,19 @@ const Inicio = () => {
           <img src={promocion} alt="" className="promocion text" />
         </div>
         <div className="py-2">
-          <h2 className="text-center pb-2 mt-4">  - Clases - </h2>
+          <h2 className="text-center pb-2 mt-4"> - Clases - </h2>
           <Row className="justify-content-center">
             {clases.map((cardClases) => (
               <CardClases key={cardClases._id} clase={cardClases}></CardClases>
             ))}
           </Row>
         </div>
-  
+
         <h2 className="text-center pb-2 mt-4"> Nuestros planes </h2>
         <Row className="justify-content-center">
-            {
-              planes.map((cardPlanes) => (
-                <CardPlanes key={cardPlanes._id} plan={cardPlanes}></CardPlanes>
-              ))
-            }
+          {planes.map((cardPlanes) => (
+            <CardPlanes key={cardPlanes._id} plan={cardPlanes}></CardPlanes>
+          ))}
         </Row>
 
         <h2 className="text-center mt-4">-- Nuestros Instructores --</h2>

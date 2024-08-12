@@ -16,13 +16,13 @@ const Contacto = () => {
     alerta();
   };
 
-  const alerta = ()=>{
+  const alerta = () => {
     Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "En este momento no se puede contactar con nosotros!",
     });
-  }
+  };
 
   return (
     <>
@@ -41,7 +41,7 @@ const Contacto = () => {
           </p>
           <p title="WhatsApp">
             <i className="bi bi-whatsapp"> </i>
-             381-543457
+            381-543457
           </p>
         </div>
         <article>
@@ -52,10 +52,8 @@ const Contacto = () => {
                 width="600"
                 height="450"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.780360576903!2d-65.20250599021722!3d-26.83737958996084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c067f08c0e9%3A0x28e4bee1d7b74a3c!2sMariano%20Moreno%20370%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e1!3m2!1ses!2sar!4v1723153238522!5m2!1ses!2sar"
-                
               ></iframe>
             </div>
-            
           </div>
         </article>
         <div className="d-flex justify-content-center my-5 gap-2">
