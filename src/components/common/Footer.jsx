@@ -41,7 +41,7 @@ const Footer = () => {
               <p>Login</p>
             </Link>
           </Col>
-          <Col xs={12} md={4} lg={3} className="">
+          <Col xs={12} md={4} lg={3} className="text-center">
             <h4 className="text-white">Información</h4>
             <Link className="text-decoration-none link-dark text-white" to="*">
               <p>Políticas de privacidad</p>
@@ -56,7 +56,7 @@ const Footer = () => {
               <p>Horarios de atención</p>
             </Link>
           </Col>
-          <Col xs={12} md={4} lg={3} className="">
+          <Col xs={12} md={4} lg={3} className="text-center">
             <h4 className="text-white">Contacto</h4>
             <Link
               to={"*"}

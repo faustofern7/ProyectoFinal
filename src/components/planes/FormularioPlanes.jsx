@@ -15,7 +15,6 @@ const FormularioPlanes = () => {
   const navegacion = useNavigate();
 
   const claseValidada = (clase) => {
-    console.log(clase);
     navegacion("*");
   };
 
