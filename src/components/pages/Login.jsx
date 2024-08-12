@@ -54,8 +54,8 @@ const Login = ({ setUsuarioLogueado }) => {
       <section className="d-none d-sm-block">
         <img
           src="https://i.ibb.co/qRnwGqX/loginnn.png"
-          alt="mesero sirviendo a clientes"
-          title="mesero sirviendo a clientes"
+          alt="Imagen personalizada de gym centre"
+          title="Imagen personalizada de gym centre"
           className="imgLogin h-100"
         />
       </section>
