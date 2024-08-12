@@ -1,0 +1,30 @@
+.imgAdministrador{
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.table {
+    background-color: transparent;
+  }
+  
+.table th,
+.table td {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #ddd; 
+    color: white;
+  }
+.table th {
+    font-weight: bold;
+}
+
+.btnOpciones{
+    background: transparent;
+    border: solid 1px white;
+    color: white;
+}
+  
+.btnOpciones:hover{
+    background: white;
+    color: rgb(7, 7, 7);
+}
