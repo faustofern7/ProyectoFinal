@@ -1,0 +1,34 @@
+{
+    "clases": [
+      {
+        "nombreClase": "Yoga para gyugyg",
+        "nombreProfesor": "Ana García",
+        "imagen": "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+        "imagenClase": "https://images.pexels.com/photos/1375883/pexels-photo-1375883.jpeg?auto=compress&cs=tinysrgb&w=300",
+        "descripcion_breve": "Una introducción suave a las posturas y técnicas de yoga.",
+        "fecha": "martes",
+        "horario": "08:00 AM - 09:00 AM",
+        "id": "yoga-beg-1a2b"
+      },
+      {
+        "nombreClase": "Yoga Restaurativo",
+        "nombreProfesor": "Laura Hernández",
+        "imagen": "https://images.pexels.com/photos/4325396/pexels-photo-4325396.jpeg",
+        "imagenClase": "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+        "descripcion_breve": "Relájate y recupérate con posturas sostenidas y suaves.",
+        "fecha": "Martes",
+        "horario": "08:00 PM - 09:00 PM",
+        "id": "yoga-res-5e6f"
+      },
+      {
+        "nombreClase": "Yoga Restaurativo",
+        "nombreProfesor": "Laura Hernández",
+        "imagen": "https://images.pexels.com/photos/4325396/pexels-photo-4325396.jpeg",
+        "imagenClase": "https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg",
+        "descripcion_breve": "Relájate y recupérate con posturas sostenidas y suaves.",
+        "fecha": "Miércoles",
+        "horario": "08:00 PM - 09:00 PM",
+        "id": "yoga-res-5dfc"
+      }
+    ]
+  }
