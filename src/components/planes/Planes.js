@@ -22,5 +22,4 @@ const planes = [
   },
 ];
 
-
 export default planes;
